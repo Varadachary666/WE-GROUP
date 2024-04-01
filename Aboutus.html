@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="luxury.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    }
+    /*--------------------------------------------------TOP BAR-------------------------------------------*/
+.top-bar
+{
+    display:flex;
+
+}
+.contacts
+{
+    display:inline-flex;
+    margin-left:20%;
+    
+}
+/*-------------------------NAV MENU---------------------------------*/
+
+nav
+{
+    background-color:#F3EFEA;
+}
+.nav-bar
+{
+    display:flex;
+    margin:2% 0 0 30%;
+    
+}
+.nav-bar p:hover
+{
+  color:#D87748;
+  cursor: pointer;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.drop {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+color:#D87748;
+}
+.dropbtn {
+  color: black;
+  margin-top:20px;
+  font-size: 16px;
+  border: none;
+}
+
+
+
+    .main-cnt i{
+  font-size: 2cap;
+  padding: 3%;
+}
+.main-cnt h2{
+    margin-left: 40%;
+    margin-top:-6% ;
+    opacity: 0.8;
+}
+.main-cnt img{
+    margin-left: 40%;
+    margin-top: -6%;
+}
+.main-cnt p:hover{
+    color: rgb(135, 135, 214);
+    cursor: pointer;
+}
+.main-cnt ul{
+    display: flex;
+    list-style-type:none;
+    margin-left: 80%;
+}
+.main-cnt ul a{
+   padding: 4%;
+   margin-top: -30%;
+   font-size: 2cap;
+}
+.main-cnt a:hover{
+    color: rgb(240, 24, 8);
+    cursor: pointer;
+}
+.main-cnt1{
+    background-color: rgb(223, 217, 217);
+}
+.main-cnt1 li{
+    padding: 2%;
+}
+.main-cnt1 li:hover{
+    color: brown;
+    cursor: pointer;
+}
+.main-img img{
+    width: 42vw;
+    height: 54vh;
+    margin-left: 52%;
+    margin-top: 6%;
+}
+.main-img1{
+    background-image: url("https://www.luxurysimplified.com/assets/img/graphic-drink.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 20vh;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+.markimg1{
+    margin-left: 9%;
+    margin-top: 4%;
+}
+.markimg1:hover{
+    border: 1px solid black;
+}
+.markimg2{
+    margin-left: 31%;
+    margin-top: -5%;
+}
+.markimg2:hover{
+    border: 1px solid black;
+}
+.markimg3{
+    margin-left: 54%;
+    margin-top: -6%;
+}
+.markimg3:hover{
+    border: 1px solid black;
+}
+.markimg4{
+     margin-left: 76%;
+     margin-top: -6%;
+}
+.markimg4:hover{
+    border: 1px solid black;
+}
+.markimg5{
+    width: 30vw;
+    height: 7vh;
+    margin-left: 36%;
+    margin-top: -1%;
+}
+.markimg6{
+    margin-left: 39%;
+    width: 30vw;
+    height: 7vh;
+}
+.markimg7{
+    margin-left: 36%;
+    width: 30vw;
+    height: 7vh;
+}
+.markimg8{
+    margin-left: 36%;
+    width: 34vw;
+    height: 7vh;
+}
+.magg{
+    margin-top: -29.5%;
+}
+.magg1{
+    margin-top: -29.7%;
+}
+.magg2{
+    margin-top: -29.7%;
+}
+.magg3{
+    margin-top: -29.7%;
+}
+.magg5{
+    margin-top: -29.6%;
+    margin-left: 33%;
+}
+.magg6{
+    margin-top: -29.6%;
+    margin-left: 53%;
+}
+.magg7{
+    margin-top: -29.6%;
+    margin-left: 73%;
+}
+.main-cnt6{
+    background-image:url("https://www.luxurysimplified.com/blog/wp-content/uploads/2020/05/Green-Memphis-Keynote-Presentation-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 8%;
+    margin-top: 20%;
+    width: 40vw;
+    height: 90vh;
+}
+.main-cnt6:hover{
+    opacity: 0.8;
+}
+.boxx{
+    margin-left: 17%;
+    margin-top: -30%;
+    text-align: center;
+    background-color: rgb(240, 224, 224);
+    width: 25vw;
+    height: 25vh;
+}
+.main-cnt7{
+    background-image: url("https://www.luxurysimplified.com/blog/wp-content/uploads/2021/08/The-Carriage-House-at-May-River-Palmetto-Bluff.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 53%;
+    margin-top: -47%;
+    width: 40vw;
+    height: 90vh;
+}
+.main-cnt7:hover{
+    opacity: 0.8;
+}
+.boxx1{
+    margin-left: 17%;
+    margin-top: -30%;
+    text-align: center;
+    background-color: rgb(240, 224, 224);
+    width: 25vw;
+    height: 25vh;
+}
+.main-cnt8{
+    background-image: url("https://www.luxurysimplified.com/blog/wp-content/uploads/2022/10/143121-Ellis20Creek20Photography20Palmetto20Bluff20October202022-103-1024x683.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+    margin-top: 15%;
+    width: 30vw;
+    height: 90vh;
+}
+.main-cnt8:hover{
+    opacity: 0.8;
+}
+.boxx2{
+    margin-left: 7%;
+    margin-top: -30%;
+    text-align: center;
+    background-color: rgb(240, 224, 224);
+    width: 25vw;
+    height: 25vh;
+}
+.main-cnt9{
+    background-image: url("https://www.luxurysimplified.com/blog/wp-content/uploads/2020/08/IMG_1728-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 36%;
+    margin-top: -47%;
+    width: 30vw;
+    height: 90vh;
+}
+.main-cnt9:hover{
+    opacity: 0.8;
+}
+.boxx3{
+    margin-left: 7%;
+    margin-top: -30%;
+    text-align: center;
+    background-color: rgb(240, 224, 224);
+    width: 25vw;
+    height: 25vh;
+}
+.main-cnt10{
+    background-image: url("https://www.luxurysimplified.com/blog/wp-content/uploads/2022/11/Explorer-Yacht-Vanguard-Rendering-View-2-1024x576.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 69%;
+    margin-top: -47%;
+    width: 30vw;
+    height: 90vh;
+}
+.main-cnt10:hover{
+    opacity: 0.8;
+}
+.boxx4{
+    margin-left: 7%;
+    margin-top: -30%;
+    text-align: center;
+    background-color: rgb(240, 224, 224);
+    width: 25vw;
+    height: 25vh;
+}
+.pre{
+    font-size: 1.7cap;
+    margin-left: 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.pre1{
+    font-size: 1.8cap;
+   
+}
+.pre1 ul{
+    display: flex;
+    list-style: none;
+}
+.lastone{
+    margin-left: 70%;
+    margin-top: -24%;
+}
+.lastone button{
+    width: 9vw;
+    height: 6vh;
+    background-color: rgb(202, 112, 27);
+    border:none;
+    color: white;
+    
+}
+/*-----------------------------------------------Footer------------------------------------------*/
+.footer{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #f3efea;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 25px;
+ }
+.col2 li a{
+     text-decoration: none;
+     color: black;
+}  
+</style>
+</head>
+<body>
+<!--------------------------------------------------TOP BAR------------------------------------------->
+<div class="top-bar">
+    <a href="WEGROUP.html" target="_self"><img src="https://i.ibb.co/VLzL08B/We-groupp.png" style="margin-left: 50%; width:180px; height:60px; margin-top: 0.6%;"></a>
+    
+    <div class="contacts" style="margin-left: 30%;">
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p >Call us<br>(+91) 40-87654321</p>
+  
+    <p style="color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Email Us<br>info@Wegroup.in</p>
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Careers<br>careers@wegroup.in</p>
+    </div>
+  </div>
+  <!-------------------NAV MENU--------------------------------->
+  <nav>
+  <div class="nav-bar">
+    <a href="Aboutus.html" target="_self"><P style="padding:0 20px 0 0;">ABOUT US</P></a>
+      <a href="RealEstate.html" target="_self"><P style="padding:0 20px 0 0;">REAL ESTATE</P></a>
+      <a href="construction.html" target="_self"><P style="padding:0 20px 0 0;">CONSTRUCTION</P></a>
+      <a href="HomeServices.html" target="_self"><P style="padding:0 20px 0 0;">HOME SERVICES</P></a>
+      <div class="dropdown">
+      <button class="dropbtn">PROJECTS <span style="font-size: 20px;">▾</span></button>
+      <div class="dropdown-content">
+        <a href="ongoingprojects.html" target="_blank">Ongoing Projects</a>
+        <a href="completdprojects.html" target="_blank">Completed Projects</a>
+      </div>
+     </div>
+  </nav>
+
+<div class="main-cnt2">
+    <h1 style="margin-left: 40%;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 4cap;">ABOUT</h1>
+    <p style="margin-left: 25%; font-size: 2cap;"><i>We measure success by the relationships that we build.</i></p><hr style="width: 15vw; margin-left: 39%;">
+</div>
+<div class="main-img">
+    <img src="https://www.luxurysimplified.com/assets/img/bnn-01.jpg">
+    <h2 style="margin-top: -26%;margin-left: 3%;font-family: Verdana, Geneva, Tahoma, sans-serif;opacity: 0.8;">ONE STOP SHOP</h2>
+    <p style="margin-left: 3%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">We set out to be different from other traditional real estate firms in Charleston<br> right from the beginning. First, as real estate investors, building a real estate<br> portfolio of our own of homes on the downtown peninsula. We studied the<br> market intensely, became experts at market value, opportunity, and investment<br> potential in a growing Charleston real estate market.</p>
+    <p style="margin-left: 3%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Next, we founded a construction company to keep costs in control and deliver <br>uncompromising customer service. We added a real estate brokerage in order<br>  to share our expertise with clients seeking a home in Charleston and we <br>launched a vacation rental management company after our clients asked for a<br> way to continue their relationship with us. All of this designed with only<br> one thing in mind - to be a singular resource for our clients, and to deliver<br> an exceptional experience for buyers in the Charleston real estate market.</p>
+</div>
+<div class="main-img1">
+   
+</div>
+    <h2 style="margin-left: 42%;">MEET THE TEAM</h2><hr style="width: 15vw;">
+    <img class="markimg1" src="https://www.luxurysimplified.com/assets/img/team/departmentbtn1.jpg" width="240vw" height="80vh">
+    <p style="margin-left: 14%; margin-top: -4%;"><b>CORPORATE</b></p>
+    <img class="markimg2" src="https://www.luxurysimplified.com/assets/img/team/departmentbtn2.jpg" width="240vw" height="80vh">
+    <p style="margin-left: 36%;margin-top: -4%;"><b>REAL ESTATE</b></p>
+    <img class="markimg3" src="https://www.luxurysimplified.com/assets/img/team/departmentbtn3.jpg" width="240vw" height="80vh">
+    <p style="margin-left: 59%;margin-top: -4%;"><b>CONSTRUCTION</b></p>
+    <img class="markimg4" src="https://www.luxurysimplified.com/assets/img/team/departmentbtn4.jpg" width="240vw" height="80vh">
+    <p style="margin-left: 79%; margin-top: -4%;"><b>VACATION RENTALS</b></p>
+    <h2 style="margin-left: 45%; margin-top: 15%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CORPORATE</h2>
+    <img class="markimg5" src="https://www.luxurysimplified.com/assets/img/team/department1.jpg">
+    <img style="margin-left: 16%;margin-top: 4%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/chris-jones.jpg">
+    <img style="margin-left: 2%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/sebrina.jpg">
+    <img style="margin-left: 2%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/mary-moore.jpg">
+<div class="text">
+    <p style="margin-left: 19%;">CHRIS LEIGH-JONES</p>
+    <p style="margin-left: 23%;"><i>Principal</i></p>
+    <p style="margin-left: 42%; margin-top: -5%;">SEBRINA LEIGH-JONES</p>
+    <p style="margin-left: 42%;"><i>co-founder & vice president</i></p>
+    <p style="margin-left: 64%;margin-top: -6%;">MARY MOORE</p>
+    <p style="margin-left:63% ;"><i>brand strategist & content manager</i></p>
+</div>
+    <p style="margin-left: 50%;margin-top: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>REAL ESTATE</b></p>
+    <img class="markimg6" src="https://www.luxurysimplified.com/assets/img/team/department2.jpg">
+<div class="main-cnt3">  
+    <img style="margin-left:15%; height:50vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/patty-scott.jpg">
+    <img style="margin-left:10%;margin-top: 5%; width:17vw; height:50vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/REID-WALKER.jpg">
+    <img style="margin-left:70%; margin-top: -50%; width:17vw; height:50vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/RE_Headshot_KristenMcFann.jpeg">
+</div> 
+<div class="main-cnt4">
+    <p style="margin-left: 20%;">PATTY SCOTT</p>
+    <i style="margin-left: 22%;">realtor®</i>
+    <p style="margin-left: 20%;">(843) 814-2400</p>
+    <p style="margin-left: 50%;margin-top: -8%;">EID WALKER</p>
+    <i style="margin-left: 52%;">realtor®</i>
+    <p style="margin-left: 50%;">(843) 725-8613</p>
+    <p style="margin-left: 71%;margin-top: -7%;">KRISTEN MCFANN-JOHNSON</p>
+    <i style="margin-left: 76%;">realtor®</i>
+    <p style="margin-left: 75%;">843.614.7264</p>
+</div>
+    <h2 style="margin-left: 45%; margin-top: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CONSTRUCTION</h2>
+    <img class="markimg7" src="https://www.luxurysimplified.com/assets/img/team/department3.jpg">
+    <img style="margin-left: 16%; width: 23vw;height: 50vh; margin-top: 4%" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/kris-miller-headshot-2.jpg">
+    <img style="margin-left: 2%;height: 50vh" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/CHRIS.SIOMA.HEADSHOT.jpg">
+    <img style="margin-left: 2%;height: 50vh" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/taylor-luff.jpg">
+<div class="text">
+    <p style="margin-left: 23%;">CHRIS MILLER</p>
+    <p style="margin-left: 19%;"><i>president, simplified construction</i></p>
+    <p style="margin-left: 47%; margin-top: -5%;">CHRIS SIOMA</p>
+    <p style="margin-left: 47%;"><i>project manager</i></p>
+    <p style="margin-left: 68%;margin-top: -6%;">TAYLOR MILLER</p>
+    <p style="margin-left:69% ;"><i>interior design</i></p>
+    <P style="margin-left: 69%;">(843) 749-9983</P>
+</div>
+    <h2 style="margin-left: 45%; margin-top: 10%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">VACATION RENTALS</h2>
+    <img class="markimg8" src="https://www.luxurysimplified.com/assets/img/team/department4.jpg">
+<div class="main-cnt5">
+    <img style="width: 17vw; height: 45vh; margin-top: 4%; margin-left: 2%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/AllisonBenson_001.jpg">
+    <p style="margin-left: 5%;">ALISON BENSON</p>
+    <p style="margin-left: 5%;"><i>managing director</i></p>
+</div>
+<div class="magg">
+    <img style="width: 17vw; height: 45vh; margin-left: 22%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/katherine-mattison.jpg">
+    <p style="margin-left: 23%;">KATHERINE MATTISON</p>
+    <p style="margin-left: 20%;"><i>director of operations - palmetto bluff</i></p>
+</div>
+<div class="magg1">
+    <img style="width: 17vw; height: 45vh; margin-left: 42%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/ava-torres-min.jpg">
+    <p style="margin-left: 48%;">AVA TORRES</p>
+    <p style="margin-left: 46%;"><i>client relations manager</i></p>
+</div>
+<div class="magg2">
+    <img style="width: 17vw; height: 45vh; margin-left: 62%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/devon-brusseau-min.jpg">
+    <p style="margin-left: 65%;">DEVON BRUSSEAU</p>
+    <p style="margin-left: 65%;"><i>guest relations manager</i></p>
+</div>
+<div class="magg3">
+    <img style="width: 17vw; height: 45vh; margin-left: 82%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/alana-cholewsky-min.jpg">
+    <p style="margin-left: 84%;">ALANNA CHOLEWSKY</p>
+    <p style="margin-left: 85%;"><i>guest relations/concierge</i></p>
+</div>
+<div class="magg4">
+    <img style="width: 17vw; height: 45vh; margin-top: 3%; margin-left: 14%;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/carrie-cadwallader-min.jpg">
+    <p style="margin-left: 15%;">CARRIE CADWALLADER</p>
+    <p style="margin-left: 13%;"><i>guest relations manager, palmetto bluff</i></p>
+</div>
+<div class="magg5">
+    <img style="width: 17vw; height: 45vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/michelle-brown-min.jpg">
+    <p style="margin-left: 5%;">MICHELLE BROWN</p>
+    <p style="margin-left: 7%;"><i>operations manager</i></p>
+</div>
+<div class="magg6">
+    <img style="width: 17vw; height: 45vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/Joyce_Barrosse.jpg">
+    <p style="margin-left: 5%;">JOYCE BARROSSE</p>
+    <p style="margin-left: 6%;"><i>property inspector</i></p>
+</div>
+<div class="magg7">
+    <img style="width: 17vw; height: 45vh;" src="https://www.luxurysimplified.com/warehouse/fm/images/staff/explore-ls/Hannah_Sears.jpg">
+    <p style="margin-left: 14%;">HANNAH SEARS</p>
+    <p style="margin-left: 19%;"><i>interior design</i></p>
+</div><br><br>
+    <hr style="width: 80vw;">
+    <h2 style="margin-left: 45%; margin-top: 5%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">FROM THE BLOG</h2>
+<div class="main-cnt6">
+    <div class="boxx">
+        <h4 style="color: rgb(117, 64, 64);font-size: small;padding-top: 8%;">DISCOVER-CHARLESTON</h4>
+        <p style="text-transform: uppercase;letter-spacing: 1px;text-align: center;">Charleston SC: Bringing Your Boat to Warmer Climates for the Winter</p>
+        <hr style="width: 10vw;">
+    </div>
+</div>
+<div class="main-cnt7">
+    <div class="boxx1">
+        <h4 style="color: rgb(117, 64, 64);font-size: small;padding-top: 8%;">INVESTMENT</h4>
+        <p style="text-transform: uppercase;letter-spacing: 1px;text-align: center;">Planning for Short-term Rental Income as an Investment Strategy</p>
+        <hr style="width: 10vw;">
+    </div>
+</div>
+<div class="main-cnt8">
+    <div class="boxx2">
+        <h4 style="color: rgb(117, 64, 64);font-size: small;padding-top: 8%;">CONSTRUCTION</h4>
+        <p style="text-transform: uppercase;letter-spacing: 1px;text-align: center;">Building in Palmetto Bluff: Revealing the Final Details of a Modern-style Barn</p>
+        <hr style="width: 10vw;">
+    </div>
+</div>
+<div class="main-cnt9">
+    <div class="boxx3">
+        <h4 style="color: rgb(117, 64, 64);font-size: small;padding-top: 8%;">REAL-ESTATE</h4>
+        <p style="text-transform: uppercase;letter-spacing: 1px;text-align: center;">Buying Investment Property in Charleston SC: Could the Right Time be Now?</p>
+        <hr style="width: 10vw;">
+    </div>
+</div>
+<div class="main-cnt10">
+    <div class="boxx4">
+        <h4 style="color: rgb(117, 64, 64);font-size: small;padding-top: 8%;">EXPLORE-LS</h4>
+        <p style="text-transform: uppercase;letter-spacing: 1px;text-align: center;">Explorer Yacht: A New Journey Begins from a Love for the Sea</p>
+        <hr style="width: 10vw;">
+    </div>
+</div>
+<hr style="width: 80vw;margin-top: 8%;">
+<!-----------------------------------------------Footer--------------------------------------------->
+<div class="footer">
+    <div class="col1">
+        <img src="https://i.ibb.co/DGK8fxd/We-group-a.png" alt="We-group-a" style="width:150px; height:60px; margin-left: 15%;" >    
+            <p>At Wegroup.Com, we bring together functionality <br> 
+        and aesthetics to provide homeowners with <br> 
+        customised and efficient home Construction. Our <br>
+        team specialise in construction of houses, and <br>
+         help you create a personalised home to suit your <br>
+         lifestyle.</p>
+    </div>
+    <div class="col2">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="#" target="_self">Projects</a></li>
+    <li><a href="choose us.html" target="_self">Why Choose Us</a></li>
+    <li><a href="careers.html" target="_self"> Career</a></li>
+    <li><a href="contactus.html" target="_self">Contact Us</a></li>
+    <li><a href="Aboutus.html" target="_self">About Us</a></li>
+  </ul>
+    </div>
+    <div class="col3">
+    <h2>Contact</h2>
+    We group House,  <br>
+    Hyderabad - 500081 <br>
+    Telangana, India <br>
+    (+91) 40-87654321 <br>
+    info@Wegroup.in
+    </div>
+    <div class="col4">
+    <h2>Follow Us:</h2>
+    <div>
+        <a href="https://twitter.com/" target="_blank"><i class="icon1 fa-brands fa-x-twitter " style="color: #0f1419;; font-size: 30px;"></i></a>
+        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="icon2 fa-brands fa-facebook" style="font-size: 30px;color: #1877F2;margin-left: 10px;"></i></a>
+        <a href="https://www.youtube.com/?login" target="_blank"><i class="icon3 fa-brands fa-square-youtube" style=" color: #c4302b;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="icon4 fa-brands fa-instagram" style="color: #405DE6;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i class="icon5 fa-brands fa-linkedin-in" style=" color: #0e76a8;font-size:30px ;margin-left: 10px;"></i></a>
+      </div>
+    </div>
+  </div>
+  <p style=" background-color: black; width: 100%; text-align: center;color: white;">© 2024 WE GROUP CONSTRUCTION LLC, Privacy policy, Terms & Conditions</p>
+</body>
+</html>

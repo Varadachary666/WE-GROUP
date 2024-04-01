@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/*--------------------------------------------------TOP BAR-------------------------------------------*/
+.top-bar
+{
+    display:flex;
+
+}
+.contacts
+{
+    display:inline-flex;
+    margin-left:20%;
+    
+}
+/*-------------------------NAV MENU---------------------------------*/
+
+nav
+{
+    background-color:#F3EFEA;
+}
+.nav-bar
+{
+    display:flex;
+    margin:2% 0 0 30%;
+    
+}
+.nav-bar p:hover
+{
+  color:#D87748;
+  cursor: pointer;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.drop {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+color:#D87748;
+}
+.dropbtn {
+  color: black;
+  margin-top:20px;
+  font-size: 16px;
+  border: none;
+}
+/*-------------------------------------*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/435345.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 15vh;
+
+}
+
+.blue_circle {
+
+    width: 607px;
+    height: 607px;
+    background-color: #1B356A;
+    border-radius: 100%;
+    padding: 30px;
+    text-align: center;
+   margin-left: 5%;
+
+}
+.blue_circle a{
+text-decoration: none; 
+color: white;
+line-height: 60px;
+font-size: larger;
+padding: 20%;
+}
+.blue_circle h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 48px;
+    margin-top: 100px;
+    font-weight: 700;
+
+
+}
+
+.blue_circle p {
+
+    font-size: 18px;
+    margin-top: 27px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    width: 421px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    line-height: 2.2;
+  
+
+}
+
+.blue_circle button{
+
+    padding:  16px 52px;
+    color: white;
+    background: none;
+    margin-top: 40px;
+    border: 2px solid white;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 90px;
+}
+
+.flex_left {
+    width: 50%;
+}
+
+.flex_left h2 {
+
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B356A;
+    line-height: 1.2;
+    font-weight: 600;
+
+}
+
+.mini_blue_circle {
+
+    width: 118px;
+    height: 118px;
+    background-color: #1B356A;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.flex_right {
+
+    width: 50%;
+}
+
+.flex_right p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    color: #565656;
+    font-weight: 600;
+}
+
+.flex_right p:nth-child(2){
+    margin-top: 55px;
+}
+
+.flex_right button {
+    margin-top: 30px;
+    padding: 16px 60px;
+    border: 2px solid #1B356A;
+    border-radius: 50px;
+    color: #1B356A;
+    font-weight: 700;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.blue_section{
+
+    margin-top: 100px;
+    background-color: #1B356A;
+    padding-top: 75px;
+    padding-bottom: 300px;
+
+}
+
+.header1{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    font-weight: 600;
+    color: white;
+
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(363px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+   
+}
+
+.grid_card{
+   
+    background-color: white;
+    padding: 30px;
+    border-radius: 19px;
+}
+
+.grid_card img{
+    width: 100%;
+    height: 202px;
+    border-radius: 19px;
+    margin-top: 20px;
+}
+.grid_card h3{
+
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.grid_card p{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.grid_card .abc{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.grid_card button{
+
+    padding: 3px 0px;
+    margin-top: 30px ;
+    background: none;
+    font-size: 14px;
+    font-family:'Open Sans', sans-serif;
+    border: none;
+    color: #1B356A;
+    font-weight: 700;
+    border-bottom: 1px solid #1B356A;
+}
+
+.ending{
+   
+    background-color: #D9D9D9;
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+.grid_2container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    /* background-color: white; */
+    height: 303px;
+    margin-top: -200px ;
+
+}
+.grid_ccard{    
+
+    height: 296px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.grid_ccard img{
+    /* width: 100%; */
+    height: 64px;
+    width: 64px;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+.grid_ccard h3{
+
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    text-align: center;
+
+}
+
+.grid_ccard p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.flex_2container{
+
+    margin-top: 63px;
+    display: flex;
+    gap: 75px;
+}
+
+.flex_2left h2{
+
+    color: #1B356A;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+.start{
+    display: flex;
+    gap: 30px;
+}
+
+.email h2{
+    text-align: start;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name h2{
+    text-align: start;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.email input{
+    width: 232px;
+    height: 49px;
+    border: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #999999;
+    border-bottom: 2px solid #1B356A;
+    margin-top: 5px;
+    
+}
+.name input{
+    width: 232px;
+    height: 49px;
+    border: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #999999;
+    border-bottom: 2px solid #1B356A;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.middle h2{
+   text-align: start;
+   margin-top: 40px;
+   font-size: 16px;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+.middle textarea{
+
+  
+    width: 100%;
+    max-width: 494px;
+
+    border: none;
+    border-bottom: 2px solid #1B356A;
+    margin-top: 5px;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #99999920;
+
+
+}
+
+.flex_2left button{
+
+    font-size: 16px;
+    background-color: #1B356A;
+    font-family:'Open Sans', sans-serif;
+    padding: 15px 30px 15px;
+    color: white;
+    margin-top: 35px;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 900;
+    
+}
+
+.flex_2right h1{
+
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B356A;
+    font-weight: 600;
+
+}
+
+.flex_2right h3{
+
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    font-style: italic;
+
+
+}
+
+.flex_2right p{
+
+    font-size: 16px;
+    font-family:'Open Sans', sans-serif;
+    margin-top: 20px;
+    line-height: 2;
+
+}
+
+.social_items svg{
+    width: 41px;
+    height: 41px;
+    margin-top: 40px;
+   fill: #1B356A;
+
+}
+/*-----------------------------------------------Footer------------------------------------------*/
+.footer{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #f3efea;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 25px;
+ }
+.col2 li a{
+     text-decoration: none;
+     color: black;
+}  
+</style>
+</head>
+
+
+<body>
+<!--------------------------------------------------TOP BAR------------------------------------------->
+<div class="top-bar">
+    <a href="WEGROUP.html" target="_self"><img src="https://i.ibb.co/VLzL08B/We-groupp.png" style="margin-left: 50%; width:180px; height:60px; margin-top: 0.6%;"></a>
+    
+    <div class="contacts" style="margin-left: 30%;">
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p >Call us<br>(+91) 40-87654321</p>
+  
+    <p style="color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Email Us<br>info@Wegroup.in</p>
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Careers<br>careers@wegroup.in</p>
+    </div>
+  </div>
+  <!-------------------NAV MENU--------------------------------->
+  <nav>
+  <div class="nav-bar">
+    <a href="Aboutus.html" target="_self"><P style="padding:0 20px 0 0;">ABOUT US</P></a>
+      <a href="RealEstate.html" target="_self"><P style="padding:0 20px 0 0;">REAL ESTATE</P></a>
+      <a href="construction.html" target="_self"><P style="padding:0 20px 0 0;">CONSTRUCTION</P></a>
+      <a href="HomeServices.html" target="_self"><P style="padding:0 20px 0 0;">HOME SERVICES</P></a>
+      <div class="dropdown">
+      <button class="dropbtn">PROJECTS <span style="font-size: 20px;">▾</span></button>
+      <div class="dropdown-content">
+        <a href="ongoingprojects.html" target="_blank">Ongoing Projects</a>
+        <a href="completdprojects.html" target="_blank">Completed Projects</a>
+      </div>
+     </div>
+  </nav>
+  <!---------------------------------->
+    <div class="header">
+        <div class="blue_circle" >
+            <h1>Our Projects</h1>
+          <a href="ongoingprojects.html">  Ongoing projects </a> <br>
+            <a href="completdprojects.html">Completed Projects</a><br>
+            <button>Read More</button></a>
+        </div>
+    </div>
+
+    <div class="White_section" >
+        <div class="container" >
+            <div class="flex_container" style="margin-top: 10%;">
+                <div class="flex_left">
+                    <h2>For more than 100 years, Company has provided engineering, procurement and construction services</h2>
+                    <div class="mini_blue_circle"></div>
+                </div>
+                <div class="flex_right">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio est vel. Soluta nesciunt tempore voluptas, ipsa pariatur quam architecto neque tempora reprehenderit ipsum, esse asperiores dolore excepturi assumenda natus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dicta perferendis enim esse quas molestias nulla adipisci sunt suscipit iure corporis pariatur perspiciatis, voluptatibus necessitatibus tempore expedita laboriosam quasi quae!</p>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue_section">
+        <div class="container">
+            <h2 class="header1">Engineering, Procurement and Construction Around the World</h2>
+            <div class="grid_container">
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-photo/construction-silhouette_1127-3246.jpg?t=st=1711720199~exp=1711723799~hmac=f0e2e614525169c78b0a146ab0995be9c072ed0811d620b7a2c71bf3c35cda88&w=900">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1711719956~exp=1711723556~hmac=5c0de8ae4a447d30f6c49971d12c7942d0843036defd3be00c92be4f614b99bf&w=900">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-photo/view-chicago-skyline-lake-by-night-usa_268835-3603.jpg?w=996&t=st=1711776036~exp=1711776636~hmac=fa7058549cc29eb56d2c66623e773e733b2c79454cb2c8262a6ccd89eef66de2">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i> Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/767.jpg" alt="">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i> Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://as2.ftcdn.net/v2/jpg/02/01/18/91/1000_F_201189187_HAvNKbc5dBACc8Sl0sXVv8lVbwQua0ph.jpg">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i> Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-photo/construction-workers-sunset_53876-138180.jpg?t=st=1711776455~exp=1711780055~hmac=0e2741b1750df21f41e49b11f5237a12d160a9ca084aeaefbf95a362682679e6&w=996">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-vector/construction-silhouettes-design-with-building-equipment-hill-barrier-tape-cones_1284-33910.jpg?t=st=1711776548~exp=1711780148~hmac=593b30a636f4510065023634d671383fd93fedc416aef929497c7e11481913ad&w=740">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-psd/construction-house-services-social-media-post-web-banner-design-template_84443-1059.jpg?t=st=1711776618~exp=1711780218~hmac=80e50368024f8fcac62138af9b752c0b3d0ad84b41c7562041e688e5aa2807d2&w=740">
+                </div>
+                <div class="grid_card">
+                    <h3>Construction and Renovation</h3>
+                    <p class="abc">Multiple Locations</p>
+                    <p><i>Ut voluptatum explicabo vero saepe natus blanditiis veritatis eius possimus non voluptate id, culpa libero laudantium corrupti aspernatur ipsum autem illo dicta!</i></p>
+                    <button>Learn more</button>
+                    <img src="https://img.freepik.com/free-photo/modern-business-building-scenery-touching-sky_181624-5785.jpg?t=st=1711776684~exp=1711780284~hmac=5ec386d9250bfb3a206bd020439f0a63f5dbbcddb78d5a3107756833165649f7&w=740">
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="ending">
+        <div class="container">
+            <div class="grid_2container">
+                <div class="grid_ccard">
+                    <img src="https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/dacd59ff.png" alt="">
+                    <h3>Our Main Office</h3>
+                    <p>SoHo 94 Broadway St New York, NY 1001</p>
+                </div>
+                <div class="grid_ccard">
+                    <img src="https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/dacd59ff.png" alt="">
+                    <h3>Our Main Office</h3>
+                    <p>SoHo 94 Broadway St New York, NY 1001</p>
+                </div>
+                <div class="grid_ccard">
+                    <img src="https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/dacd59ff.png" alt="">
+                    <h3>Our Main Office</h3>
+                    <p>SoHo 94 Broadway St New York, NY 1001</p>
+                </div>
+                <div class="grid_ccard">
+                    <img src="https://assets.nicepagecdn.com/d2cc3eaa/2385700/images/dacd59ff.png" alt="">
+                    <h3>Our Main Office</h3>
+                    <p>SoHo 94 Broadway St New York, NY 1001</p>
+                </div>
+            </div>
+            <div class="flex_2container">
+                <div class="flex_2left">
+
+                        <form >
+                            <div class="start">
+                                <div class="email">
+                                    <h2>Email</h2>
+                                    <input type="email" placeholder="Enter a valid email address">
+                                </div>
+                                <div class="name">
+                                    <h2>Name</h2>
+                                    <input type="text" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <h2>Message</h2>
+                               <textarea name="" id="" placeholder="Enter Your message"></textarea>
+                            </div>                            
+                            <button>SUBMIT</button>
+                        </form>
+                </div>
+                <div class="flex_2right">
+                    <h1>Get in Touch</h1>
+                    <h3>We believe sustainability is vitally important.</h3>
+                    <p>Etiam sit amet convallis erat class aptent taciti sociosqu ad litora torquent per conubia! Maecenas gravida lacus. Lorem etiam sit amet convallis erat.</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------Footer--------------------------------------------->
+<div class="footer">
+    <div class="col1">
+        <img src="https://i.ibb.co/DGK8fxd/We-group-a.png" alt="We-group-a" style="width:150px; height:60px; margin-left: 15%;" >    
+            <p>At Wegroup.Com, we bring together functionality <br> 
+        and aesthetics to provide homeowners with <br> 
+        customised and efficient home Construction. Our <br>
+        team specialise in construction of houses, and <br>
+         help you create a personalised home to suit your <br>
+         lifestyle.</p>
+    </div>
+    <div class="col2">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="#" target="_blank">Projects</a></li>
+    <li><a href="choose us.html" target="_self">Why Choose Us</a></li>
+    <li><a href="careers.html" target="_self"> Career</a></li>
+    <li><a href="contactus.html" target="_self">Contact Us</a></li>
+    <li><a href="Aboutus.html" target="_self">About Us</a></li>
+  </ul>
+    </div>
+    <div class="col3">
+    <h2>Contact</h2>
+    We group House,  <br>
+    Hyderabad - 500081 <br>
+    Telangana, India <br>
+    (+91) 40-87654321 <br>
+    info@Wegroup.in
+    </div>
+    <div class="col4">
+    <h2>Follow Us:</h2>
+    <div>
+        <a href="https://twitter.com/" target="_blank"><i class="icon1 fa-brands fa-x-twitter " style="color: #0f1419;; font-size: 30px;"></i></a>
+        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="icon2 fa-brands fa-facebook" style="font-size: 30px;color: #1877F2;margin-left: 10px;"></i></a>
+        <a href="https://www.youtube.com/?login" target="_blank"><i class="icon3 fa-brands fa-square-youtube" style=" color: #c4302b;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="icon4 fa-brands fa-instagram" style="color: #405DE6;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i class="icon5 fa-brands fa-linkedin-in" style=" color: #0e76a8;font-size:30px ;margin-left: 10px;"></i></a>
+      </div>
+    </div>
+  </div>
+  <p style=" background-color: black; width: 100%; text-align: center;color: white;">© 2024 WE GROUP CONSTRUCTION LLC, Privacy policy, Terms & Conditions</p>
+</body>
+</html>

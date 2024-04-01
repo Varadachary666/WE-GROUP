@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME SERVICES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+    /*--------------------------------------------------TOP BAR-------------------------------------------*/
+.top-bar
+{
+    display:flex;
+
+}
+.contacts
+{
+    display:inline-flex;
+    margin-left:20%;
+    
+}
+/*-------------------------NAV MENU---------------------------------*/
+
+nav
+{
+    background-color:#F3EFEA;
+}
+.nav-bar
+{
+    display:flex;
+    margin:2% 0 0 30%;
+    
+}
+.nav-bar p:hover
+{
+  color:#D87748;
+  cursor: pointer;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.drop {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+color:#D87748;
+}
+.dropbtn {
+  color: black;
+  margin-top:20px;
+  font-size: 16px;
+  border: none;
+}
+
+
+.head{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgb(10, 2, 53);
+}
+.head P{
+    margin-left: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25PX;
+}
+.pera{
+    margin-left: 60px;
+    display: flex;
+    padding-top: 30px;
+    
+}
+.pic1{
+    padding-left: 80px;
+    margin-top: 40px;
+
+}
+.pera p{
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.line{
+    width: 82%;
+    margin-top: 60px;
+}
+.st h1{
+    text-align: center;
+    color: rgb(112, 52, 3);
+
+}
+.sam{
+    width: 200px;
+}
+.st p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container img{
+    height: 400px;
+    width: 500px;
+    justify-content: space-between;
+    padding-left: 70px;
+    margin: 20px;
+}
+.container img:hover{
+    opacity: 0.9;
+}
+.sam1{
+    width: 90%;
+    margin-top: 40px;
+}
+.h0{
+    margin-left: 250px;
+    margin-top: 60px;
+    color: rgb(109, 3, 3);
+}
+.l1{
+    width: 300px;
+    margin-top: 40px;
+}
+.pg{
+    padding-left: 100px;
+    margin-top: 60px;
+    color: rgb(5, 5, 83);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s1{
+    margin-left: 100px;
+
+}
+.s1 h1{
+    color: rgb(88, 88, 90);
+    letter-spacing: 3px;
+}
+.s1 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 60px;
+}
+.m1{
+    margin-left: 50px;
+}
+.s2{
+    margin-left: 60%;
+    margin-top: -485px;
+}
+.s2 h1{
+    letter-spacing: 3px;
+    color: rgb(95, 95, 97);
+}
+.s2 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box{
+    border: 1px solid black;
+    width: 30%;
+    color: white;
+    background-color: black;
+    margin-left: 35%;
+    padding-left: 25px;
+    margin-top: 60px;
+    
+}
+.pera4{
+    margin: 40px;
+    padding-left: 60px;
+    font-style: italic;
+    color: blue;
+}
+
+
+
+.container9{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(199, 190, 241);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #02162b;
+}
+.para{
+    color: rgb(114, 114, 114);
+    width: 90%;
+    margin: auto;
+    background-color: rgb(199, 190, 241);
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    border: 2px solid rgb(114, 114, 114);
+
+}
+
+/*-----------------------------------------------Footer------------------------------------------*/
+.footer{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #f3efea;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 25px;
+ }
+.col2 li a{
+     text-decoration: none;
+     color: black;
+}  
+</style>
+</head>
+<body>
+    <!--------------------------------------------------TOP BAR------------------------------------------->
+<div class="top-bar">
+    <a href="WEGROUP.html" target="_self"><img src="https://i.ibb.co/VLzL08B/We-groupp.png" style="margin-left: 50%; width:180px; height:60px; margin-top: 0.6%;"></a>
+    
+    <div class="contacts" style="margin-left: 30%;">
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p >Call us<br>(+91) 40-87654321</p>
+  
+    <p style="color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Email Us<br>info@Wegroup.in</p>
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Careers<br>careers@wegroup.in</p>
+    </div>
+  </div>
+  <!-------------------NAV MENU--------------------------------->
+  <nav>
+  <div class="nav-bar">
+    <a href="Aboutus.html" target="_self"><P style="padding:0 20px 0 0;">ABOUT US</P></a>
+      <a href="RealEstate.html" target="_self"><P style="padding:0 20px 0 0;">REAL ESTATE</P></a>
+      <a href="construction.html" target="_self"><P style="padding:0 20px 0 0;">CONSTRUCTION</P></a>
+      <a href="HomeServices.html" target="_self"><P style="padding:0 20px 0 0;">HOME SERVICES</P></a>
+      <div class="dropdown">
+      <button class="dropbtn">PROJECTS <span style="font-size: 20px;">▾</span></button>
+      <div class="dropdown-content">
+        <a href="ongoingprojects.html" target="_blank">Ongoing Projects</a>
+        <a href="completdprojects.html" target="_blank">Completed Projects</a>
+      </div>
+     </div>
+  </nav>
+
+   <div class="head">
+    <div class="main">
+        <h1>WE GROUP HOME SERVICES</h1>
+        <P>HIGH-TOUCH home care FOR YOUR PEACE OF MIND</P>
+   </div>
+</div>
+<div class="pera">
+    <p style="line-height: 1.9;">As a full-spectrum property management firm, we offer personalized luxury home management and maintenance 
+        services throughout the Charleston, Bluffton, Hilton Head areas. We provide unparalleled services including 
+        housekeeping, preventivemaintenance, concierge services, and more, including other essential services as
+         requested by the homeowner.Whether your asset is beachfront along one of the lowcountry’s sun-filled beaches, 
+         or behind the gates in the upscale community of Palmetto Bluff, as owners ourselves, we appreciate the 
+         investment you have made in your property. As such, we work to ensure all is safe and maintained during your absence.</p>
+        <div class="pic1">
+            <img src="https://www.luxurysimplified.com/assets/img/home-services/1.jpg" alt="house1" height="350px">
+        </div>
+</div>
+<hr class="line">
+<div class="st">
+    <h1 class="hd">ALL UNDER ONE ROOF</h1>
+    <hr class="sam">
+    <p class="p2">Our comprehensive offering includes:</p>
+</div>
+<div>
+    <div class="container" style="display: flex;">
+        <img src="https://th.bing.com/th/id/OIP.BGg76ZJZaVlUJ8jpSJKEJAHaEf?rs=1&pid=ImgDetMain" alt="" width="500px">
+        <img src="https://www.prestige-affairs.com/cdn/shop/products/Alexandra_Bedframe_Shopify_1050pxX800px_150dpi_300x.jpg?v=1578029503" alt="">
+    </div>
+    <div class="container" style="display: flex;">
+        <img src="https://th.bing.com/th/id/OIP.BGg76ZJZaVlUJ8jpSJKEJAHaEf?rs=1&pid=ImgDetMain" alt="" width="500px">
+        <img src="https://www.prestige-affairs.com/cdn/shop/products/Alexandra_Bedframe_Shopify_1050pxX800px_150dpi_300x.jpg?v=1578029503" alt="">
+    </div>
+    <hr class="sam1">
+    <div>
+        <h1 class="h0">DETAIL DRIVEN AND LOCALLY-BASED BUILDER</h1>
+    </div>
+    <hr class="l1">
+    <p class="pg">LOCATED WITHIN THE GATES OF PALMETTO BLUFF, our site-based, responsive team includes a licensed General Contractor with an ‘A’<br> <br>Grade status and approval in place for operation in the community by the Palmetto Bluff DRB. Our Home Services team can easily assist clients<br> <br>in obtaining a quote from our internal construction firm, SIMPLIFIED CONSTRUCTION, on your home improvement projects.</p>
+    <div class="s1">
+        <img src="https://www.luxurysimplified.com/assets/img/construction-left.jpg" alt="house pic" width="250px" class="m1">
+        <h1>NEW CONSTRUCTION</h1>
+        <p>No project is too big or too small for our construction team and, <br> <br>as a client of Luxury Simplified Homes Services, you'll receive <br> <br>priority status for estimating and quickly getting your construction <br><br>project underway.</p>
+    </div>
+    <div class="s2">
+        <img src="https://www.luxurysimplified.com/assets/img/paint-can-right.jpg" alt="bucket" width="250px" class="m2"> 
+        <h1>RENOVATIONS</h1>
+        <p>Whether our team has built your home, or you have hired us to <br> <br>manage your existing residence, our combined years of experience<br> <br>can take stress out of handling the upkeep of your valuable <br><br>investment.</p>
+    </div>
+    <div class="box">
+        <h2>Get to know simplified Construction</h2>
+    </div>
+    <b><p class="pera4" style="text-align: center;">We have fostered deep relationships with the area’s most reputable vendors and maintenance specialists. LUXURY SIMPLIFIED HOME <br><br>SERVICES allows homeowners to take full advantage, offering access to the best local professionals.</p></b>
+</div>
+
+
+<div class="container9">
+    <form action="#">
+        <h2>Construction Registration Form</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Construction">Construction:</label>
+            <select id="Construction" name="Construction" required>
+                <option value="">Select construction</option>
+                <option value="villa">villa</option>
+                <option value="duplex">duplex</option>
+                <option value="appartment">appartment</option>
+                <option value="private house">private house</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
+<div>
+    <b><p class="para">LUXURY SIMPLIFIED HOME SERVICES is here to provide a home management experience tailored to meet your every need and a singular, stress-free solution for oversight of your home.From general upkeep and home organization to the oversight of vendors and housekeeping, we provide exclusive property owner solutions to help maintain and care for your asset in Palmetto Bluff.</p></b>
+</div>
+<br>
+<hr>
+<br>
+
+<!-----------------------------------------------Footer--------------------------------------------->
+<div class="footer">
+    <div class="col1">
+        <img src="https://i.ibb.co/DGK8fxd/We-group-a.png" alt="We-group-a" style="width:150px; height:60px; margin-left: 15%;" >    
+            <p>At Wegroup.Com, we bring together functionality <br> 
+        and aesthetics to provide homeowners with <br> 
+        customised and efficient home Construction. Our <br>
+        team specialise in construction of houses, and <br>
+         help you create a personalised home to suit your <br>
+         lifestyle.</p>
+    </div>
+    <div class="col2">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="#" target="_blank">Projects</a></li>
+    <li><a href="choose us.html" target="_self">Why Choose Us</a></li>
+    <li><a href="careers.html" target="_self"> Career</a></li>
+    <li><a href="contactus.html" target="_self">Contact Us</a></li>
+    <li><a href="Aboutus.html" target="_self">About Us</a></li>
+  </ul>
+    </div>
+    <div class="col3">
+    <h2>Contact</h2>
+    We group House,  <br>
+    Hyderabad - 500081 <br>
+    Telangana, India <br>
+    (+91) 40-87654321 <br>
+    info@Wegroup.in
+    </div>
+    <div class="col4">
+    <h2>Follow Us:</h2>
+    <div>
+        <a href="https://twitter.com/" target="_blank"><i class="icon1 fa-brands fa-x-twitter " style="color: #0f1419;; font-size: 30px;"></i></a>
+        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="icon2 fa-brands fa-facebook" style="font-size: 30px;color: #1877F2;margin-left: 10px;"></i></a>
+        <a href="https://www.youtube.com/?login" target="_blank"><i class="icon3 fa-brands fa-square-youtube" style=" color: #c4302b;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="icon4 fa-brands fa-instagram" style="color: #405DE6;font-size:30px ;margin-left: 10px;"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i class="icon5 fa-brands fa-linkedin-in" style=" color: #0e76a8;font-size:30px ;margin-left: 10px;"></i></a>
+      </div>
+    </div>
+  </div>
+  <p style=" background-color: black; width: 100%; text-align: center;color: white;">© 2024 WE GROUP CONSTRUCTION LLC, Privacy policy, Terms & Conditions</p>
+
+    
+</body> 
+</html>

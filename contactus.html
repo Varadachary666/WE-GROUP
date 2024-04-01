@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         *{
+          font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------TOP BAR-------------------------------------------*/
+.top-bar
+{
+    display:flex;
+
+}
+.contacts
+{
+    display:inline-flex;
+    margin-left:20%;
+    
+}
+/*-------------------------NAV MENU---------------------------------*/
+
+nav
+{
+    background-color:#F3EFEA;
+}
+.nav-bar
+{
+    display:flex;
+    margin:2% 0 0 30%;
+    
+}
+.nav-bar p:hover
+{
+  color:#D87748;
+  cursor: pointer;
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.drop {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+color:#D87748;
+}
+.dropbtn {
+  color: black;
+  margin-top:20px;
+  font-size: 16px;
+  border: none;
+}
+/*-----------------------------------------------Footer------------------------------------------*/
+.footer{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #f3efea;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 25px;
+ }
+.col2 li a{
+     text-decoration: none;
+     color: black;
+} 
+
+        .card1-cart1 h1{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.card1-cart1 p{
+    font-size: 25px;
+    font-weight: italic;
+}
+.card1-cart1{
+    padding: 50px 0;
+   text-align: center;
+   
+}
+.card2-cart1{
+ background-color: #1877F2;
+ width: 40%;
+ margin: auto;
+ padding: 30px;
+}
+
+.card2-cart1 label{
+ font-size: 20px;
+ text-align: left;
+ padding: 20px;
+
+}
+.card2-cart1 input{
+    width: 400px;
+    height: 30px;
+
+}
+.card2-cart1 select{
+    width: 400px;
+    height: 30px;
+}
+.card2-cart1 option{
+    font-size: 20px;
+} 
+.btn1{
+    padding: 10px 30px;
+    background-color: brown;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.card2{
+    
+    justify-content: center;
+}
+.card2-cart2 li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.card2-cart2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+        background-color: bisque;
+        padding-bottom: 20px;
+
+    
+ 
+}
+.card2-cart2 h6 {
+    margin-bottom: -2px;
+    font-size: 25px;
+}
+.card2-cart2 ul{
+    margin-top: -50px;
+ 
+ 
+}
+    </style>
+</head>
+<body>
+     <!--------------------------------------------------TOP BAR------------------------------------------->
+<div class="top-bar">
+    <a href="WEGROUP.html" target="_self"><img src="https://i.ibb.co/VLzL08B/We-groupp.png" style="margin-left: 50%; width:180px; height:60px; margin-top: 0.6%;"></a>
+    
+    <div class="contacts" style="margin-left: 30%;">
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p >Call us<br>(+91) 40-87654321</p>
+  
+    <p style="color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Email Us<br>info@Wegroup.in</p>
+  
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+  
+    <p>Careers<br>careers@wegroup.in</p>
+    </div>
+  </div>
+  <!-------------------NAV MENU--------------------------------->
+  <nav>
+  <div class="nav-bar">
+    <a href="Aboutus.html" target="_self"><P style="padding:0 20px 0 0;">ABOUT US</P></a>
+      <a href="RealEstate.html" target="_self"><P style="padding:0 20px 0 0;">REAL ESTATE</P></a>
+      <a href="construction.html" target="_self"><P style="padding:0 20px 0 0;">CONSTRUCTION</P></a>
+      <a href="HomeServices.html" target="_self"><P style="padding:0 20px 0 0;">HOME SERVICES</P></a>
+      <div class="dropdown">
+      <button class="dropbtn">PROJECTS <span style="font-size: 20px;">▾</span></button>
+      <div class="dropdown-content">
+        <a href="ongoingprojects.html" target="_blank">Ongoing Projects</a>
+        <a href="completdprojects.html" target="_blank">Completed Projects</a>
+      </div>
+     </div>
+  </nav>
+
+
+      <div class="card1">
+       <div class="card1-cart1">
+            <h1>SEND US A MESSAGE</h1>
+            <p>We'd love to hear from you!</p>
+            <hr>
+        </div>
+      </div>
+      <div class="card2">
+        <center> <div class="card2-cart1">
+            <label for="First name">First Name *</label><br>
+            <input type="text"><br>
+            <label for="Last name">Last Name *</label><br>
+            <input type="text"><br>
+            <label for="Email Address">Email Address *</label><br>
+            <input type="text"><br>
+            <label for="Phone Number">Phone Number *</label><br>
+            <input type="tel"><br>
+            <label for="Intrested in">Intrested in</label><br>
+            <select name="name" id="">
+                <option value="please select">Please select</option>
+                <option value="Real esate">Real Estate</option>
+                <option value="Construction">Construction</option>
+                <option value="">Rental</option>
+                <option value="">Others</option>
+                <option value="">Investment</option>
+            </select><br>
+            <label for="message">Message *</label><br>
+            <textarea name="" id="" cols="50" rows="5"></textarea><br>
+              <a href=""><button class="btn1">Call Back</button></a>
+        </div> </center>
+        <div class="card2-cart2">
+            
+            <div>
+                <h6>Real Estate</h6>
+                <li>50 Immigration Street, Suite 204 <br>
+                    Charleston, SC 29403</li>
+                    <li>(+91) 40-87654321</li>
+                    <li><a href="#">realestate@Wegroup.com</a></li>
+                </div>
+                <div>
+                 <h6>Retreats</h6>
+                    <li>50 Immigration Street, Suite 204 <br>
+                        Charleston, SC 29403</li>
+                    <li>(+91) 40-87654321</li>
+                 <li><a href="#">retreats@Wegroup.com</a></li>
+                </div>
+                <div>
+                <h6>Construction</h6>
+                <li>50 Immigration Street, Suite 204 <br>
+                    Charleston, SC 29403</li>
+                    <li>(+91) 40-87654321</li>
+                    <li><a href="#">construction@Wegroup.com</a></li>
+                </div>
+
+            
+        </div>
+      </div>
+
+      <!-----------------------------------------------Footer--------------------------------------------->
+<div class="footer">
+    <div class="col1">
+        <img src="https://i.ibb.co/DGK8fxd/We-group-a.png" alt="We-group-a" style="width:150px; height:60px; margin-left: 15%;" >    
+            <p>At Wegroup.Com, we bring together functionality <br> 
+        and aesthetics to provide homeowners with <br> 
+        customised and efficient home Construction. Our <br>
+        team specialise in construction of houses, and <br>
+         help you create a personalised home to suit your <br>
+         lifestyle.</p>
+    </div>
+    <div class="col2">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="#" target="_blank">Projects</a></li>
+    <li><a href="choose us.html" target="_self">Why Choose Us</a></li>
+    <li><a href="careers.html" target="_self"> Career</a></li>
+    <li><a href="contactus.html" target="_self">Contact Us</a></li>
+    <li><a href="Aboutus.html" target="_self">About Us</a></li>
+  </ul>
+    </div>
+    <div class="col3">
+    <h2>Contact</h2>
+    We group House,  <br>
+    Hyderabad - 500081 <br>
+    Telangana, India <br>
+    (+91) 40-87654321 <br>
+    info@Wegroup.in
+    </div>
+    <div class="col4">
+    <h2>Follow Us:</h2>
+    <div>
+      <a href="https://twitter.com/" target="_blank"><i class="icon1 fa-brands fa-x-twitter " style="color: #0f1419;; font-size: 30px;"></i></a>
+      <a href="https://www.facebook.com/login.php/" target="_blank"><i class="icon2 fa-brands fa-facebook" style="font-size: 30px;color: #1877F2;margin-left: 10px;"></i></a>
+      <a href="https://www.youtube.com/?login" target="_blank"><i class="icon3 fa-brands fa-square-youtube" style=" color: #c4302b;font-size:30px ;margin-left: 10px;"></i></a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="icon4 fa-brands fa-instagram" style="color: #405DE6;font-size:30px ;margin-left: 10px;"></i></a>
+      <a href="https://www.linkedin.com/login" target="_blank"><i class="icon5 fa-brands fa-linkedin-in" style=" color: #0e76a8;font-size:30px ;margin-left: 10px;"></i></a>
+    </div>
+    </div>
+  </div>
+  <p style=" background-color: black; width: 100%; text-align: center;color: white;">© 2024 WE GROUP CONSTRUCTION LLC, Privacy policy, Terms & Conditions</p>
+</body>
+</html>

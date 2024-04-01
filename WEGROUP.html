@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEGROUP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+   *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------TOP BAR-------------------------------------------*/
+.top-bar
+{
+    display:flex;
+
+}
+
+.contacts
+{
+    display:inline-flex;
+    margin-left:20%;
+    
+}
+
+/*-------------------------NAV MENU---------------------------------*/
+
+nav
+{
+    background-color:#F3EFEA;
+}
+.nav-bar
+{
+    display:flex;
+    margin:2% 0 0 30%;
+    
+}
+
+.nav-bar p:hover
+{
+  color:#D87748;
+  cursor: pointer;
+}
+
+.nav-bar a
+{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+
+.drop {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.dropdown-content a:hover
+{
+color:#D87748;
+}
+.dropbtn {
+  color: black;
+  margin-top:20px;
+  font-size: 16px;
+  border: none;
+}
+
+
+/*--------------------------BANNER--------------------------------*/
+.banner
+{
+   background-image: url(https://i.ibb.co/Gkg5TPW/Construction-Completion-Costs.jpg);
+   
+   background-size: cover;
+   background-position: center;
+    width: 100%;
+    height:100vh;
+}
+
+.txt-btn
+{
+    
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding:15vh 0 0 8vh;
+    
+    
+}
+
+.txt-btn button
+{
+    text-align:center;
+    font-weight: bold;
+    padding:12px;
+    border:none;
+    background-color: yellow;
+    border-radius: 5px;
+    margin:0 0 0 2vh;
+    
+}
+
+.txt-btn button:hover
+{
+    background-color: red;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*-----------------------------------------------Main Body---------------------------------------------*/
+.Main-row{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      
+    }
+    .Main-row>div{
+      width: 40%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 4px rgba(18, 4, 110, 0.571);
+     text-align: center;
+     margin: 10px;
+          
+    }
+    .Main-row h1{
+      color: blueviolet;
+    }
+    .Main-row p{
+      line-height: 1.9;
+      padding-left:30px;
+      padding-right:30px;
+
+    }
+/*--------------------------LOCATIONS--------------------------------*/
+
+.container
+{
+    background-color: #F8931F; 
+    overflow: auto;
+
+}
+
+.map
+{
+    float:right;
+}
+
+.loc-text
+{
+    margin:15vh 0 0 10vh;
+}
+
+.loc-text h2
+{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#282759;
+}
+
+.loc-text p
+{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    
+}
+
+.loc-text button
+{
+    margin:0 0 10vh 10vh;
+    padding:15px 30px 15px 30px;
+    border:none;
+    font-weight: bold;
+}
+
+.loc-text button:hover
+{
+    cursor: pointer;
+    background-color: yellow;
+}
+/*--------------------------Main body 2--------------------------------*/
+
+    .main-row2{
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      background-color: bisque;
+      margin: 20px;
+      padding: 20px;
+    }
+    .main-row2 h2{
+      padding-left: 15px;
+
+    }
+    .main-row2 p{
+      padding: 15px;
+    }
+
+   
+
+/*-----------------------------------------------Footer------------------------------------------*/
+    .footer{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #f3efea;
+      padding-right: 10px;
+      padding-left: 10px;
+      line-height: 25px;
+
+        }
+    .col2 li a{
+        text-decoration: none;
+        color: black;
+        }  
+
+</style>
+</head>
+<body>
+<!--------------------------------------------------TOP BAR------------------------------------------->
+<div class="top-bar">
+    <a href="WEGROUP.html" target="_self"><img src="https://i.ibb.co/VLzL08B/We-groupp.png" style="margin-left: 50%; width:180px; height:60px; margin-top: 0.6%;"></a>
+    
+    <div class="contacts" style="margin-left: 30%;">
+
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+
+    <p >Call us<br>(+91) 40-87654321</p>
+
+    <p style="color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+
+    <p>Email Us<br>info@Wegroup.in</p>
+
+    <p style=" color:lightgray;font-size:50px; margin:0 20px 10px 0; padding:0 20px 0 20px;">|</p>
+
+    <p>Careers<br>careers@wegroup.in</p>
+    </div>
+</div>
+<!-------------------NAV MENU--------------------------------->
+<nav>
+  <div class="nav-bar">
+    <a href="Aboutus.html" target="_self"><P style="padding:0 20px 0 0;">ABOUT US</P></a>
+      <a href="RealEstate.html" target="_self"><P style="padding:0 20px 0 0;">REAL ESTATE</P></a>
+      <a href="construction.html" target="_self"><P style="padding:0 20px 0 0;">CONSTRUCTION</P></a>
+      <a href="HomeServices.html" target="_self"><P style="padding:0 20px 0 0;">HOME SERVICES</P></a>
+      
+      <div class="dropdown">
+      <button class="dropbtn">PROJECTS <span style="font-size: 20px;">▾</span></button>
+      <div class="dropdown-content">
+        <a href="ongoingprojects.html" target="_blank">Ongoing Projects</a>
+        <a href="completdprojects.html" target="_blank">Completed Projects</a>
+      </div>     
+    </div> 
+  </nav>
+  
+  <!---------------------BANNER--------------------------------->
+  <div class="banner">
+      <div class="txt-btn">
+  <h2><span style="color:black;">WE HAVE BEEN PART OF<br>INDIA'S PROGRESS <br>FOR ALMOST</span><br>HALF A CENTURY</h2>
+  <a href="./knowmore3.html" target="_blank"><button>LEARN MORE</button></a>
+  </div>
+  </div>
+  
+
+ 
+  <!-----------------------------------------------Main Body--------------------------------------------->
+<div class="main-body" style="margin-bottom: 50px; ">
+  <h1 style="text-align: center; color: rgb(94, 3, 94);">Lets Build A Development Journey</h1>
+  <p style="text-align: center; width: 80%; margin: auto; line-height: 1.9;">Delivering High Quality Construction Services at Economical Prices. Arcncube Constructions As Emerged As 
+    A Leader In The Industry By Providing Exceptional Construction Services. With Our Commitment To Quality, Efficiency,
+     and Affordability, We Have Gained A Reputation For Delivering Top Notch Results To Our Clients.</p> <br><br><br>
+  <div class="Main-row">
+    <div>
+      <h1>Project Management</h1>
+      <p>We manage projects from initiation to completion 
+        and coordinate various aspects, such as scheduling 
+         & budgeting</p>
+    </div>
+    <div>
+      <h1>Construction Services</h1>
+      <p>Core activities include excavation, foundation laying,
+         structural work, roofing, plumbing, electrical work,
+          and finishing.</p>
+    </div>
+  </div>
+  <div class="Main-row">
+    <div>
+      <h1>Design And Planning</h1>
+      <p>Our team offer design services and collaborate with architects to plan projects effectively.</p>
+    </div>
+    <div>
+      <h1>Post-Construction Services</h1>
+      <p>We provide post-construction services, such as maintenance and renovations.</p>
+    </div>
+  </div>
+  <div class="Main-row">
+    <div>
+      <h1>Client Satisfaction</h1>
+      <p>Aim to build long-term relationships with clients. Understanding Client needs.</p>
+    </div>
+    <div>
+      <h1>Quality Control</h1>
+      <p>Ensuring the quality of construction work is crucial.  We have quality control measures in place to meet industry standards</p>
+    </div>
+  </div>
+</div>
+<br>
+  <!-------------------LOCATIONS--------------------------------->
+  <div class="container">
+      <img class="map" src="https://i.ibb.co/X85Q86x/india-map.png">
+      <div class="loc-text">
+          <h2>Encompassing diverse areas of<br>
+          construction pan India</h2>
+          <p>Limited has made a mark in the country as one of the largest listed companies<br>
+           in terms of revenue with proven expertise in buildings, transportation, water and<br>
+           environment, irrigation, electrical(T&D), mining and railways sectors. Luxury Simplified <br>
+           has expanded its footprint to have a pan India presence with offices across nine <br>
+           cities - Ahmedabad, Bengaluru, Chennai, Delhi, Lucknow, Mumbai, Pune, Kolkata, <br>
+           and Patna with headquarters located at Hyderabad.</p><br>
+           
+           <h3><span style="font-size: 60px; color:#282759; margin-left: 10vh;">160+</span><br>
+              
+              <span style="margin-left: 10vh; color:white;">Active projects across<br>
+                  <span style="margin-left: 10vh; color:white;">India</span></h3>
+                  
+                  <a href="./knowmore3.html" target="_blank"><button>KNOW MORE</button></a>
+           </div>
+      </div>
+ <!-------------------Main body 2--------------------------------->
+    <div class="main-row2">
+      <div>
+        <h2>EXPERT IN INDUSTRY</h2>
+        <p>Our experienced professionals, we have the expertise to handle complex industrial shed projects. 
+          Our knowledge and skills translate into high-quality construction.</p>
+      </div>
+      
+      <div>
+        <h2>CLIENT SATISFACTION</h2>
+        <p>Client satisfaction is at the core of our business. 
+          We take pride in our track record of happy clients who have benefited from our customized shed solutions.</p>
+      </div>
+      <div>
+        <h2>TIME ACCURACY</h2>
+        <p>We guarantee accurate timelines and prompt delivery, so your dream space is ready for you exactly when you need it.
+           We believe in exceeding expectations and delivering results.</p>
+      </div>
+     
+    </div>
+<!-----------------------------------------------Footer--------------------------------------------->
+<div class="footer">
+    <div class="col1">
+        <img src="https://i.ibb.co/DGK8fxd/We-group-a.png" alt="We-group-a" style="width:150px; height:60px; margin-left: 15%;" >    
+            <p>At Wegroup.Com, we bring together functionality <br> 
+        and aesthetics to provide homeowners with <br> 
+        customised and efficient home Construction. Our <br>
+        team specialise in construction of houses, and <br>
+         help you create a personalised home to suit your <br>
+         lifestyle.</p>
+    </div>
+    <div class="col2">
+ <h2>Quick Links</h2>
+ <ul>
+    <li><a href="#" target="_self">Projects</a></li>
+    <li><a href="choose us.html" target="_self">Why Choose Us</a></li>
+    <li><a href="careers.html" target="_self"> Career</a></li>
+    <li><a href="./contactus.html" target="_self">Contact Us</a></li>
+    <li><a href="Aboutus.html" target="_self">About Us</a></li>
+ </ul>
+    </div>
+    <div class="col3">
+    <h2>Contact</h2>
+    We group House,  <br>
+    Hyderabad - 500081 <br>
+    Telangana, India <br>
+    (+91) 40-87654321 <br>
+    info@Wegroup.in
+    </div>
+    <div class="col4">
+    <h2>Follow Us:</h2>
+    <div>
+    <a href="https://twitter.com/" target="_blank"><i class="icon1 fa-brands fa-x-twitter " style="color: #0f1419;; font-size: 30px;"></i></a>
+    <a href="https://www.facebook.com/login.php/" target="_blank"><i class="icon2 fa-brands fa-facebook" style="font-size: 30px;color: #1877F2;margin-left: 10px;"></i></a>
+    <a href="https://www.youtube.com/?login" target="_blank"><i class="icon3 fa-brands fa-square-youtube" style=" color: #c4302b;font-size:30px ;margin-left: 10px;"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="icon4 fa-brands fa-instagram" style="color: #405DE6;font-size:30px ;margin-left: 10px;"></i></a>
+    <a href="https://www.linkedin.com/login" target="_blank"><i class="icon5 fa-brands fa-linkedin-in" style=" color: #0e76a8;font-size:30px ;margin-left: 10px;"></i></a>
+  </div>
+    </div>
+</div>
+</body>
+</html>
